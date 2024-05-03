@@ -9,15 +9,15 @@ from abc import ABC, abstractmethod
 class BaseMessageSender(ABC):
 
     @abstractmethod
-    def send_message(self, message_content):
+    def send_message(self, message_content, recipient):
         raise NotImplementedError("Method is not implemented")
 
 
 class EmailSender(BaseMessageSender):
-    def send_message(self, message_content):
-        print(f"Email: '{message_content}' has been sent.")
+    def send_message(self, message_content, recipient):
+        print(f"Email: '{message_content}' has been sent to {recipient}.")
 
 
 class SlackSender(BaseMessageSender):
-    def send_message(self, message_content):
-        print(f"Slack message: '{message_content}' has been sent")
+    def send_message(self, message_content, recipient):
+        print(f"Slack message: '{message_content}' has been sent to {recipient}.")

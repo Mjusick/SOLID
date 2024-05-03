@@ -8,8 +8,8 @@ In more complicated implementations it would introduce additional conditions and
 
 class MessageSender:
 
-    def send_email(self, message_content):
-        print(f"Email: '{message_content}' has been sent.")
+    def send_email(self, message_content, recipient):
+        print(f"Email: '{message_content}' has been sent to {recipient}.")
 
-    def send_slack_notification(self, message_content):
-        print(f"Slack message: '{message_content}' has been sent")
+    def send_slack_notification(self, message_content, recipient):
+        print(f"Slack message: '{message_content}' has been sent to {recipient}.")
