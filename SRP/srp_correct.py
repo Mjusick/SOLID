@@ -23,7 +23,7 @@ class DebitCardManager:
             print("Card number already exists.")
 
 
-class AccountManager:
+class BankAccountManager:
     def __init__(self):
         self.account_balance = 0
 
