@@ -1,7 +1,10 @@
 """
 Principle: Single Responsibility Principle
+
 Rule: A class should have only one reason to change (should have only one responsibility).
-Example: Correct implementation where DebitCardManager manages card details and AccountManager manages account balance operations.
+
+Example: Correct implementation where DebitCardManager manages card details and AccountManager manages account
+balance operations.
 """
 
 

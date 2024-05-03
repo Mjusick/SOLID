@@ -1,6 +1,8 @@
 """
 Principle: Single Responsibility Principle
+
 Rule: A class should have only one reason to change (should have only one responsibility).
+
 Example: Violation of principle by managing card details AND processing account balance operations in one class
 """
 
